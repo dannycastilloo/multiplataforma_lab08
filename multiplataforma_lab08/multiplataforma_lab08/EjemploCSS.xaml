@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="multiplataforma_lab08.EjemploCSS">
+    
+    <ContentPage.Resources>
+        <StyleSheetExtension>
+            <![CDATA[
+                .lblRojo {
+                    background-color: red;
+                    text-align: center;
+                }
+                .btnNaranja {
+                    background-color: orange;
+                    color: gray;
+                }
+            ]]>
+        </StyleSheetExtension>
+    </ContentPage.Resources>
+    
+    <StackLayout VerticalOptions="Center" Margin="20">
+        <StackLayout Orientation="Vertical">
+            <Label Text="Texto rojo" StyleClass="lblRojo"/>
+            <Button Text="Botón naranja con texto gris" StyleClass="btnNaranja" />
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
